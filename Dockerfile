@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 # Installer FFmpeg
-RUN apt-get update && apt-get install -y ffmpeg && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y ffmpeg curl && rm -rf /var/lib/apt/lists/*
 
 # Créer le dossier de travail
 WORKDIR /app
